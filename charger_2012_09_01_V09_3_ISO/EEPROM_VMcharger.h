@@ -1,5 +1,10 @@
 #include <EEPROM.h>
-#include <WProgram.h>  // for type definitions
+
+#if defined(ARDUINO) && ARDUINO >= 100
+	#include "Arduino.h"
+#else
+	#include "WProgram.h"
+#endif
 
 template <class T> int EEPROM_writeAnything(int ee, const T& value)
 {

@@ -38,14 +38,14 @@ uLCD_144 *myLCD;
 
 //----------- DEBUG switch - careful, this disables many safety features...---------------
 //#define DEBUG0 // just increase maximums
-// #define DEBUG // additional printouts / delays / etc.
+ #define DEBUG // additional printouts / delays / etc.
 //----------------------------------------------------------------------------------------
 
 
 //------------------------------ MAIN SWITCHES -----------------------------------
 #define drop110power // reduce power to ~1.5kW when connected to 110VAC?
 // #define hall150U // 150A output current unidirectional sensor?
-#define hall100U // 100A output current unidirectional sensor? (default for kits / chargers shipped from 12/12)
+// #define hall100U // 100A output current unidirectional sensor? (default for kits / chargers shipped from 12/12)
 // #define MCC100A // 100A output rating - use ONLY with a custom-wound inductor
 //#define A7520_V // using A7520 optoisolation for outV sensing? (as opposed to ISO124)
 #define PFC // is this a PFC unit?

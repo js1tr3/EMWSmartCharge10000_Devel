@@ -13,7 +13,11 @@ See README.txt for usage & more info
 #define uLCD_144_h
 
 // without this include, nothing works 
-#include "WProgram.h"
+#if defined(ARDUINO) && ARDUINO >= 100
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
 
 class uLCD_144
 {
